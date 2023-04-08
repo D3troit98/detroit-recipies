@@ -788,7 +788,7 @@ form > *:last-child {
 }
 
 
-.logo {
+.mogo  {
   font-family: var(--headingFont);
   font-size: 2rem;
   font-weight: bold;
@@ -797,14 +797,19 @@ form > *:last-child {
   display: inline-block;
   padding: 0.5rem 1rem;
   border-radius: 10px;
-
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
-.logo:hover {
-  background-color: var(--primary-200);
+
+.mogo p:hover {
+ 
   color: var(--primary-700);
 }
-.logo span {
+.mogo span {
   color: var(--primary-700);
 }
+
+

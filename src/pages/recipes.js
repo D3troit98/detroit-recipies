@@ -1,11 +1,11 @@
 import React from "react";
 import Layout from "../components/Layout";
-const Recipies = () => {
+const Recipes = () => {
   return (
     <Layout>
-      <h1>about page</h1>
+      <h1>Recipe page</h1>
     </Layout>
   );
 };
 
-export default Recipies;
+export default Recipes;
