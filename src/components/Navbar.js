@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import styled from "styled-components";
 import { Link } from "gatsby";
 import { FaAlignJustify } from "react-icons/fa";
 const Navbar = () => {
@@ -7,7 +8,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="nav-center">
         <div className="nav-header">
-          <Link to="/" class="mogo">
+          <Link to="/" className="logo">
             <p>
               {" "}
               Detroit<span>Recipes</span>
@@ -60,5 +61,6 @@ const Navbar = () => {
     </nav>
   );
 };
+
 
 export default Navbar;

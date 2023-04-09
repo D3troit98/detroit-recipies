@@ -788,7 +788,7 @@ form > *:last-child {
 }
 
 
-.mogo  {
+.logo  {
   font-family: var(--headingFont);
   font-size: 2rem;
   font-weight: bold;
@@ -800,15 +800,15 @@ form > *:last-child {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
 }
 
 
-.mogo p:hover {
+.logo p:hover {
  
   color: var(--primary-700);
 }
-.mogo span {
+.logo span {
   color: var(--primary-700);
 }
 
