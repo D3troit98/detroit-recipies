@@ -7,6 +7,10 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
 module.exports = {
   siteMetadata: {
     title: "Detroit Recipes",
@@ -31,6 +35,14 @@ module.exports = {
         name: `images`,
         // Path to the directory
         path: `${__dirname}/src/assets/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `lurbhsmw52q6`,
+        // Learn about environment variables: https://gatsby.dev/env-vars
+        accessToken: process.env.CONTENTFUL_API_KEY,
       },
     },
   ],
